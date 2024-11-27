@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: #0062b3;
+    color: #ededed;
+    justify-content: space-between;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #0062b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: top 0.3s ease-in-out;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #00abf0;
+    color: #ededed;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0062b3;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0062b3;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0062b3;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.8s;
+}
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0062b3;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.2s;
+    z-index: 2;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #0062b3;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #0062b3;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #0062b3;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #0062b3;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.2s;
+    z-index: 2;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: #0062b3;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+/* General Section Styling */
+#services,
+#team,
+#contact,
+#about {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+/* Section headings */
+.about h2,
+.services h2,
+.team h2,
+.contact h2 {
+    font-size: 36px;
+    color: #ededed;
+    margin-bottom: 20px;
+}
+
+/* Section text */
+.about p,
+.services p,
+.team p,
+.contact p {
+    color: #cfcfcf;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Services Section */
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    /* Allow wrapping */
+}
+
+.service-card {
+    background: #0a2a40;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+    flex: 1 1 200px;
+    /* Make cards flexible */
+    margin: 10px;
+    /* Add margin for spacing */
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #00abf0;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    color: #ededed;
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+.team-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    /* Stack image and text */
+    align-items: center;
+    background: #0a2a40;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    flex: 1 1 300px;
+    /* Make portfolio items flexible */
+    margin: 10px;
+    /* Add margin for spacing */
+    text-align: center;
+    /* Center-align text */
+}
+
+.team-item:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+.team-image {
+    width: 100%;
+    /* Make the image responsive */
+    border-radius: 8px 8px 0 0;
+    /* Rounded top corners for image */
+    margin-bottom: 15px;
+    /* Space between image and text */
+}
+
+.team-text {
+    font-size: 18px;
+    color: #ededed;
+    font-weight: 500;
+}
+
+.linkBtn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #0062b3;
+    font-weight: bold;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.linkBtn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #0062b3;
+    color: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.linkBtn:hover, .email:hover {
+    color: #00abf0;
+}
+
+.linkBtn:hover::before{
+    width: 100%;
+}
+
+.notAvail {
+    width: 80%;
+    cursor: not-allowed;
+}
+
+/* Contact Section */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.email {
+    width: 15%;
+    padding: 10px;
+    margin: 15px;
+    margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    margin: 10px 0;
+    background: #0a2a40;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    color: #ededed;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 15px;
+    background: #00abf0;
+    border: none;
+    border-radius: 8px;
+    color: #0062b3;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #0080b8;
+}
+
+.footer {
+    background: #0062b3;
+    /* Match with your site's background color */
+    color: #ededed;
+    text-align: center;
+    /* Center the text */
+    padding: 20px 0;
+    /* Add some padding */
+    position: relative;
+    /* Ensure it stays at the bottom */
+    bottom: 0;
+    width: 100%;
+    /* Make sure it spans the full width */
+}
+
+.footer p {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 14px;
+    /* Adjust font size */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .home-content h1 {
+        font-size: 48px;
+    }
+
+    .home-content h3 {
+        font-size: 28px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .home {
+        padding: 0 5%;
+    }
+
+    .home-content .btn-box {
+        flex-direction: row;
+        /* Keep buttons in a row */
+        justify-content: space-between;
+        /* Space between buttons */
+        padding: 0;
+        /* Remove padding if it was set */
+    }
+
+    .service-cards {
+        flex-direction: column;
+        /* Stack service cards */
+        align-items: center;
+    }
+
+    .team-gallery {
+        flex-direction: column;
+        /* Stack portfolio items */
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .service-card,
+    .team-item {
+        max-width: 90%;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+    
+    .email {
+        width: 25%;
+    }
+}
+
+@media (max-width: 610px) {
+    .navbar {
+        width: -40%;
+        margin-top: 10px;
+        margin-left: -40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        /* Stack header items */
+        align-items: flex-start;
+        /* Align items to the start */
+        padding: 10px 5%;
+    }
+
+    .navbar {
+        justify-content: center;
+        /* Center navbar items */
+        width: -40%;
+        margin-top: 10px;
+        margin-left: -40px;
+        /* Space between header and navbar */
+        border-top: 1px solid #0080b8;
+        padding-top: 12px;
+    }
+
+    .home {
+        padding: 20px 2%;
+    }
+
+    .home {
+        padding: 20px 2%;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h3 {
+        font-size: 30px;
+    }
+
+    .home-content p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .btn-box a {
+        width: 70%;
+        /* Full width for buttons */
+        margin-bottom: 10px;
+        /* Space between buttons */
+        margin-right: 10px;
+    }
+
+    .service-card,
+    .team-item {
+        max-width: 100%;
+        /* Allow full width for smaller screens */
+        margin: 10px 0;
+        /* Vertical spacing */
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+
+    .email {
+        width: 25%;
+    }
+}
+
+@media (max-width: 476px) {
+    .email {
+        width: 35%;
+    }
+}
+
+@media (max-width: 365px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+
+    .navbar {
+        justify-content: center;
+        font-size: 5px;
+        width: -50%;
+        margin-top: 10px;
+        margin-left: -40px;
+        border-top: 1px solid #0080b8;
+        padding-top: 12px;
+    }
+
+    .home {
+        padding: 10px 2%;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .home-content p {
+        overflow-wrap: break-word;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .btn-box a {
+        width: 40%;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .service-card,
+    .team-item {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+
+    .linkBtn {
+        padding: 12px;
+        width: 90%;
+    }
+
+    .email {
+        width: 45%;
+    }
+}

@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jar Vidin PLTD - Computer Store & Software Company.">
+    <link rel="stylesheet" href="/view/Style/mainStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="/view/public/logo.png">
     <title>Jar Vidin PLTD.</title>
 </head>
+
 <body>
-    <h1>Welcome to Jar Vidin!</h1>
+    <header class="header">
+        <a href="home.html" class="logo" aria-label="Home Page">Jar Vidin PLTD.</a>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home">Начало</a>
+            <a href="#about">За нас</a>
+            <a href="#team">Екип</a>
+            <a href="#contact">Контакти</a>
+        </nav>
+    </header>
+
+    <button id="backToTop" class="back-to-top" aria-label="Scroll to top" onclick="scrollToTop()">
+        <i class='bx bxs-arrow-to-top'></i>
+    </button>
+
+    <!-- Home Section -->
+    <section id="home" class="home" aria-labelledby="home-title">
+        <div class="home-content">
+            <h1 id="home-title">Добре дошли в Жар Видин!</h1>
+            <h3>Магазин за компютри</h3>
+            <p>
+                Жар Видин ЕООД е вашият доверен приятел в изпълнението на покупки, като "Компютри, принтери, консумативи за принтери".
+            </p>
+            <div class="btn-box">
+                <a href="#contact">Контакти</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="https://www.instagram.com/jarcomputers_vidin" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/victordimitrovpetrov/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn - Victor Petrov"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.linkedin.com/in/slaveyko-stefanov-623348108/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn - Slaveyko Stefanov"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-labelledby="about-title">
+        <h2 id="about-title">За нас</h2>
+        <p>Ние сме дългогодишна фирма с опит в маркетинга!</p>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team" aria-labelledby="team-title">
+        <h2 id="team-title">Екип</h2>
+        <div class="team-cards">
+            <div class="team-card">
+                <i class='bx bx-user'></i>
+                <h3>Славейко Стефанов</h3>
+                <p>Собственик, Управител</p>
+            </div>
+            <div class="team-card">
+                <i class='bx bx-laptop'></i>
+                <h3>Виктор Петров</h3>
+                <p>Компютърен оператор, програмист</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Свържете се с нас!</h2>
+        <p>I'm always open to discussing new projects or opportunities. Feel free to reach out!</p>
+        <a href="mailto:vidin@jarcomputers.com" class="linkBtn email" aria-label="Send us an email">Email us</a>
+        <a href="https://victorpetrov.vercel.app" target="_blank" rel="noopener noreferrer" class="linkBtn email" aria-label="Visit Victor's website">Victor's Website</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024, Victor Petrov. All rights reserved.</p>
+    </footer>
+
+    <script src="/controller/backToTop.js"></script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Jar Vidin PLTD.",
+            "jobTitle": "Computer Store, Software",
+            "url": "https://info.jarvidin.com",
+            "sameAs": [
+                "https://www.instagram.com/victordpetrov/",
+                "https://github.com/VictorDPetrov",
+                "https://www.linkedin.com/in/victordimitrovpetrov/"
+            ],
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Jar Vidin PLTD."
+            }
+        }
+    </script>
 </body>
+
 </html>
