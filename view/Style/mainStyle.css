@@ -8,8 +8,8 @@
 }
 
 body {
-    background: #0062b3;
-    color: #ededed;
+    background: #FFF;
+    color: #121212;
     justify-content: space-between;
 }
 
@@ -23,7 +23,7 @@ html {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: #0062b3;
+    background: #FFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,8 +37,8 @@ html {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #00abf0;
-    color: #ededed;
+    background-color: #FFF;
+    color: #121212;
     border: none;
     border-radius: 50%;
     font-size: 24px;
@@ -59,7 +59,7 @@ html {
 .logo {
     position: relative;
     font-size: 25px;
-    color: #ededed;
+    color: #FFF;
     text-decoration: none;
     font-weight: 600;
 }
@@ -71,14 +71,14 @@ html {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #0062b3;
+    background: #FFF;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
 }
 
 .navbar a {
     font-size: 18px;
-    color: #ededed;
+    color: #121212;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -115,7 +115,7 @@ html {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #0062b3;
+    background: #FFF;
     animation: showRight 1s ease forwards;
     animation-delay: 1.2s;
 }
@@ -124,7 +124,7 @@ html {
     position: relative;
     font-size: 32px;
     font-weight: 700;
-    color: #00abf0;
+    color: #121212;
 }
 
 .home-content h3::before {
@@ -134,7 +134,7 @@ html {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #0062b3;
+    background: #FFF;
     animation: showRight 1s ease forwards;
     animation-delay: 1.5s;
 }
@@ -152,7 +152,7 @@ html {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #0062b3;
+    background: #FFF;
     animation: showRight 1s ease forwards;
     animation-delay: 1.8s;
 }
@@ -172,7 +172,7 @@ html {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #0062b3;
+    background: #FFF;
     animation: showRight 1s ease forwards;
     animation-delay: 2.2s;
     z-index: 2;
@@ -199,20 +199,19 @@ html {
 }
 
 .btn-box a:hover {
-    color: #00abf0;
+    color: #FFF;
 }
 
-.btn-box a:nth-child(2) {
-    background: transparent;
-    color: #00abf0;
+.btn-box a:nth-child(1) {
+    color: #FFF;
 }
 
-.btn-box a:nth-child(2)::before {
-    background: #00abf0;
+.btn-box a:nth-child(1)::before {
+    background: #FFF;
 }
 
-.btn-box a:nth-child(2):hover {
-    color: #0062b3;
+.btn-box a:nth-child(1):hover {
+    color: #121212;
 }
 
 .btn-box a::before {
@@ -246,7 +245,7 @@ html {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #0062b3;
+    background: #FFF;
     animation: showRight 1s ease forwards;
     animation-delay: 2.2s;
     z-index: 2;
@@ -271,7 +270,7 @@ html {
 }
 
 .home-sci a:hover {
-    color: #0062b3;
+    color: #121212;
 }
 
 .home-sci a::before {
@@ -325,44 +324,6 @@ html {
     margin: 0 auto;
     font-size: 18px;
     line-height: 1.5;
-}
-
-/* Services Section */
-.service-cards {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    /* Allow wrapping */
-}
-
-.service-card {
-    background: #0a2a40;
-    border-radius: 8px;
-    padding: 30px;
-    max-width: 250px;
-    text-align: center;
-    transition: transform 0.3s;
-    flex: 1 1 200px;
-    /* Make cards flexible */
-    margin: 10px;
-    /* Add margin for spacing */
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-}
-
-.service-card i {
-    font-size: 40px;
-    color: #00abf0;
-    margin-bottom: 15px;
-}
-
-.service-card h3 {
-    font-size: 24px;
-    color: #ededed;
-    margin-bottom: 10px;
 }
 
 /* Portfolio Section */
@@ -422,7 +383,7 @@ html {
     border: 2px solid #00abf0;
     border-radius: 3px;
     font-size: 15px;
-    color: #0062b3;
+    color: #FFF;
     font-weight: bold;
     text-decoration: none;
     font-weight: 500;
@@ -439,14 +400,14 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background: #0062b3;
-    color: #00abf0;
+    background: #FFF;
+    color: #FFF;
     z-index: -1;
     transition: .5s;
 }
 
 .linkBtn:hover, .email:hover {
-    color: #00abf0;
+    color: #121212;
 }
 
 .linkBtn:hover::before{
@@ -473,23 +434,12 @@ html {
     margin-top: 30px;
 }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 15px;
-    margin: 10px 0;
-    background: #0a2a40;
-    border: 2px solid #00abf0;
-    border-radius: 8px;
-    color: #ededed;
-    font-size: 16px;
-}
-
 .contact-form button {
     padding: 15px;
     background: #00abf0;
     border: none;
     border-radius: 8px;
-    color: #0062b3;
+    color: #FFF;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -497,7 +447,8 @@ html {
 }
 
 .contact-form button:hover {
-    background: #0080b8;
+    background: transparent;
+    color: #121212;
 }
 
 .footer {
