@@ -427,7 +427,7 @@ html {
     flex-wrap: wrap;
 }
 
-.linkBtn {
+/* .linkBtn {
     background-color: #166AB2;
     color: white;
     padding: 15px 30px;
@@ -438,6 +438,10 @@ html {
     align-items: center;
     gap: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+} */
+
+.team-card i {
+    font-size: 80px;
 }
 
 .linkBtn:hover {
@@ -455,7 +459,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 70%;
+    height: 25%;
     background: #166AB2;
     border: 2px solid #166AB2;
     border-radius: 3px;
@@ -468,6 +472,8 @@ html {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .linkBtn::before {
