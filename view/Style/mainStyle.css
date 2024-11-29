@@ -37,8 +37,8 @@ html {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #FFF;
-    color: #121212;
+    background-color: #166AB2;
+    color: #FFF;
     border: none;
     border-radius: 50%;
     font-size: 24px;
@@ -83,11 +83,13 @@ html {
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
+    position: relative;
+    top: -10px;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: #00abf0;
+    color: #166AB2;
 }
 
 .home {
@@ -185,8 +187,8 @@ html {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
+    background: #166AB2;
+    border: 2px solid #166AB2;
     border-radius: 8px;
     font-size: 19px;
     color: #0062b3;
@@ -259,10 +261,10 @@ html {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #00abf0;
+    border: 2px solid #166AB2;
     border-radius: 50%;
     font-size: 20px;
-    color: #00abf0;
+    color: #166AB2;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
@@ -270,7 +272,7 @@ html {
 }
 
 .home-sci a:hover {
-    color: #121212;
+    color: #FFF;
 }
 
 .home-sci a::before {
@@ -280,7 +282,7 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background: #00abf0;
+    background: #166AB2;
     z-index: -1;
     transition: .5s;
 }
@@ -326,61 +328,136 @@ html {
     line-height: 1.5;
 }
 
-/* Portfolio Section */
-.team-gallery {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.team-item {
-    display: flex;
-    flex-direction: column;
-    /* Stack image and text */
-    align-items: center;
-    background: #0a2a40;
-    padding: 20px;
-    border-radius: 8px;
-    transition: transform 0.3s;
-    flex: 1 1 300px;
-    /* Make portfolio items flexible */
-    margin: 10px;
-    /* Add margin for spacing */
+.about {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
     text-align: center;
-    /* Center-align text */
 }
 
-.team-item:hover {
-    transform: scale(1.05);
-    /* Slight zoom effect on hover */
+.about h2 {
+    font-size: 2.5em;
+    color: #166AB2;
+    margin-bottom: 20px;
 }
 
-.team-image {
-    width: 100%;
-    /* Make the image responsive */
-    border-radius: 8px 8px 0 0;
-    /* Rounded top corners for image */
-    margin-bottom: 15px;
-    /* Space between image and text */
+.about p {
+    font-size: 1.2em;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
-.team-text {
-    font-size: 18px;
-    color: #ededed;
-    font-weight: 500;
+.team {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+    color: #333;
 }
 
-.linkBtn{
+.team h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #166AB2;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-icon {
+    font-size: 4em;
+    color: #166AB2;
+    margin-bottom: 20px;
+}
+
+.team-info h3 {
+    font-size: 1.6em;
+    margin: 12px 0;
+    color: #166AB2;
+}
+
+.team-info p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.contact {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: #166AB2;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.linkBtn {
+    background-color: #166AB2;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.linkBtn:hover {
+    background-color: #145a8a;
+    transform: translateY(-5px);
+}
+
+.linkBtn i {
+    font-size: 1.5em;
+}
+
+.linkBtn {
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 70%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
+    background: #166AB2;
+    border: 2px solid #166AB2;
     border-radius: 3px;
     font-size: 15px;
     color: #FFF;
@@ -393,7 +470,7 @@ html {
     transition: .5s;
 }
 
-.linkBtn::before{
+.linkBtn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -406,11 +483,12 @@ html {
     transition: .5s;
 }
 
-.linkBtn:hover, .email:hover {
+.linkBtn:hover,
+.email:hover {
     color: #121212;
 }
 
-.linkBtn:hover::before{
+.linkBtn:hover::before {
     width: 100%;
 }
 
@@ -436,7 +514,7 @@ html {
 
 .contact-form button {
     padding: 15px;
-    background: #00abf0;
+    background: #166AB2;
     border: none;
     border-radius: 8px;
     color: #FFF;
@@ -537,7 +615,7 @@ html {
     .footer p {
         font-size: 12px;
     }
-    
+
     .email {
         width: 25%;
     }
