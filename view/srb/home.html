@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jar Vidin PLTD - Computer Store & Software Company.">
+    <meta name="description" content="Jar Vidin PLTD - Prodavnica računara i softverska kompanija.">
     <link rel="stylesheet" href="/view/Style/mainStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/png" href="/view/Images/jarLogo.png">
@@ -13,39 +13,39 @@
 
 <body>
     <header class="header">
-        <a href="home.html" class="logo" aria-label="Home Page"><img src="/view/Images/jarLogo.png" alt="Jar Logo"
+        <a href="home.html" class="logo" aria-label="Početna stranica"><img src="/view/Images/jarLogo.png" alt="Jar Logo"
                 style="width: 100px"></a>
-        <nav class="navbar" aria-label="Main navigation">
-            <a href="#home">Начало</a>
-            <a href="#about">За нас</a>
-            <a href="#team">Екип</a>
-            <a href="#contact">Контакти</a>
+        <nav class="navbar" aria-label="Glavna navigacija">
+            <a href="#home">Početna</a>
+            <a href="#about">O nama</a>
+            <a href="#team">Tim</a>
+            <a href="#contact">Kontakt</a>
         </nav>
         <div class="language-selector">
             <select id="language-select" aria-label="Select language" onchange="switchLanguage(this)">
-                <option value="bg" selected>Bulgarian</option> <!-- Default language is Bulgarian -->
+                <option value="bg">Bulgarian</option> <!-- Default language is Bulgarian -->
                 <option value="ro">Romanian</option>
-                <option value="srb">Serbian</option>
+                <option value="srb" selected>Serbian</option>
                 <option value="en">English</option>
             </select>
         </div>
     </header>
-
-    <button id="backToTop" class="back-to-top" aria-label="Scroll to top" onclick="scrollToTop()">
+    
+    <button id="backToTop" class="back-to-top" aria-label="Vrati se na vrh" onclick="scrollToTop()">
         <i class='bx bxs-arrow-to-top'></i>
     </button>
 
     <!-- Home Section -->
     <section id="home" class="home" aria-labelledby="home-title">
         <div class="home-content">
-            <h1 id="home-title">Добре дошли в Жар Видин!</h1>
-            <h3>Магазин за компютри</h3>
+            <h1 id="home-title">Dobrodošli u Жар Видин!</h1>
+            <h3>Prodavnica računara</h3>
             <p>
-                Жар Видин ЕООД е вашият доверен приятел в изпълнението на покупки, като "Компютри, принтери, консумативи
-                за принтери".
+                Жар Видин ЕООД je vaš pouzdani partner u kupovini kao što su "Računari, štampači, potrošni materijal za
+                štampače".
             </p>
             <div class="btn-box">
-                <a href="#contact">Контакти</a>
+                <a href="#contact">Kontakt</a>
             </div>
         </div>
         <div class="home-sci">
@@ -60,68 +60,66 @@
 
     <!-- About Section -->
     <section id="about" class="about" aria-labelledby="about-title">
-        <h2 id="about-title">За нас</h2>
+        <h2 id="about-title">O nama</h2>
         <p>
-            Жар Видин ЕООД е утвърдена компания и лидер в региона, специализирана в предлагането на висококачествени
-            продукти и услуги в областта на информационните технологии. <br> <br>
-            С екип от опитни професионалисти и дългогодишно присъствие на пазара, ние се стремим да отговорим на нуждите
-            на всеки клиент с индивидуален подход и внимание към детайла. <br> <br>
+            Жар Видин ЕООД je etablirana kompanija i lider u regionu, specijalizovana za pružanje visokokvalitetnih
+            proizvoda i usluga u oblasti informacionih tehnologija. <br> <br>
+            Sa timom iskusnih profesionalaca i dugogodišnjim prisustvom na tržištu, težimo da odgovorimo na potrebe
+            svakog klijenta sa individualnim pristupom i pažnjom prema detaljima. <br> <br>
 
-            <b>Нашите основни дейности включват: </b> <br> <br>
+            <b>Naše osnovne delatnosti uključuju: </b> <br> <br>
         </p>
 
         <ul class="custom-list">
-            <li>Магазин и сервиз за компютри и принтери</li>
-            <li>Доставка на консумативи за принтери</li>
-            <li>Разработка на софтуер, съобразен с нуждите на клиента</li>
+            <li>Prodaja i servis računara i štampača</li>
+            <li>Isporuka potrošnog materijala za štampače</li>
+            <li>Razvoj softvera prilagođenog potrebama klijenta</li>
         </ul>
 
         <br>
 
         <p>
-            Мисията ни е да предоставяме решения с висока добавена стойност, базирани на качество, коректност и
-            иновации.
-        </p>
+            Naša misija je da pružimo rešenja sa visokom dodatom vrednošću, zasnovana na kvalitetu, korektnosti i
+            inovacijama.
         </p>
     </section>
 
     <!-- Team Section -->
     <section id="team" class="team" aria-labelledby="team-title">
-        <h2 id="team-title">Екип</h2>
+        <h2 id="team-title">Tim</h2>
         <div class="team-cards">
             <div class="team-card">
                 <img src="/view/Images/sstefanov.png" style="width: 90px; height: auto; border-radius: 12px;">
                 <br> <br>
-                <h3>Славейко Стефанов</h3>
+                <h3>Slaveyko Stefanov</h3>
                 <br>
-                <p>Собственик, Управител</p>
+                <p>Vlasnik, Menadžer</p>
             </div>
             <div class="team-card">
                 <img src="/view/Images/vpetrov.png" style="width: 90px; height: auto; border-radius: 12px;">
                 <br> <br>
-                <h3>Виктор Петров</h3>
+                <h3>Viktor Petrov</h3>
                 <br>
-                <p>Компютърен оператор, програмист</p>
+                <p>Računarski operater, programer</p>
                 <a href="https://victorpetrov.vercel.app" target="_blank" rel="noopener noreferrer" class="linkBtn"
-                    aria-label="Visit Victor's website">Сайтът на Виктор</a>
+                    aria-label="Posetite Viktorov sajt">Viktorov sajt</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Свържете се с нас!</h2>
-        <p>Имате въпроси или искате да обсъдим потенциален проект?<br> Свържете се с нас и ни позволете да превърнем
-            вашите идеи в реалност!</p>
-        <a href="mailto:vidin@jarcomputers.com" class="linkBtn email" aria-label="Send us an email">Изпратете ни
+        <h2 id="contact-title">Povežite se sa nama!</h2>
+        <p>Imate pitanja ili želite da diskutujemo o potencijalnom projektu?<br> Povežite se sa nama i dozvolite nam
+            da pretvorimo vaše ideje u stvarnost!</p>
+        <a href="mailto:vidin@jarcomputers.com" class="linkBtn email" aria-label="Pošaljite nam e-mail">Pošaljite nam
             E-mail</a>
         <a href="https://jarcomputers.com" target="_blank" rel="noopener noreferrer" class="linkBtn email"
-            aria-label="Visit Jar Computers's website">Сайтът на Jar Computers</a>
+            aria-label="Posetite sajt Jar Computers">Sajt Jar Computers</a>
     </section>
 
-
     <footer class="footer">
-        <p>&copy; 2024, Jar Vidin PLTD. All rights reserved.</p>
+        <p>&copy; 2024, Jar Vidin PLTD. Sva prava zadržana.</p>
     </footer>
 
     <script src="/controller/backToTop.js"></script>
@@ -131,7 +129,7 @@
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Jar Vidin PLTD.",
-            "jobTitle": "Computer Store, Software",
+            "jobTitle": "Prodavnica računara, Softver",
             "url": "https://info.jarvidin.com",
             "sameAs": [
                 "https://www.instagram.com/victordpetrov/",
@@ -143,8 +141,8 @@
                 "name": "Jar Vidin PLTD."
             }
         }
-    </script> 
-
+    </script>
+    
     <script>
         // Function to handle the language change
         function switchLanguage(selectElement) {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/view/Style/mainStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/png" href="/view/Images/jarLogo.png">
-    <title>&#x2022; Жар Видин</title>
+    <title>&#x2022; Jar Vidin</title>
 </head>
 
 <body>
@@ -16,21 +16,21 @@
         <a href="home.html" class="logo" aria-label="Home Page"><img src="/view/Images/jarLogo.png" alt="Jar Logo"
                 style="width: 100px"></a>
         <nav class="navbar" aria-label="Main navigation">
-            <a href="#home">Начало</a>
-            <a href="#about">За нас</a>
-            <a href="#team">Екип</a>
-            <a href="#contact">Контакти</a>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
         </nav>
         <div class="language-selector">
             <select id="language-select" aria-label="Select language" onchange="switchLanguage(this)">
-                <option value="bg" selected>Bulgarian</option> <!-- Default language is Bulgarian -->
+                <option value="bg">Bulgarian</option> <!-- Default language is Bulgarian -->
                 <option value="ro">Romanian</option>
                 <option value="srb">Serbian</option>
-                <option value="en">English</option>
+                <option value="en" selected>English</option>
             </select>
         </div>
     </header>
-
+    
     <button id="backToTop" class="back-to-top" aria-label="Scroll to top" onclick="scrollToTop()">
         <i class='bx bxs-arrow-to-top'></i>
     </button>
@@ -38,14 +38,13 @@
     <!-- Home Section -->
     <section id="home" class="home" aria-labelledby="home-title">
         <div class="home-content">
-            <h1 id="home-title">Добре дошли в Жар Видин!</h1>
-            <h3>Магазин за компютри</h3>
+            <h1 id="home-title">Welcome to Jar Vidin!</h1>
+            <h3>Computer Store</h3>
             <p>
-                Жар Видин ЕООД е вашият доверен приятел в изпълнението на покупки, като "Компютри, принтери, консумативи
-                за принтери".
+                Jar Vidin LLC is your trusted friend in making purchases, such as "Computers, Printers, Printer Consumables".
             </p>
             <div class="btn-box">
-                <a href="#contact">Контакти</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
         <div class="home-sci">
@@ -60,65 +59,59 @@
 
     <!-- About Section -->
     <section id="about" class="about" aria-labelledby="about-title">
-        <h2 id="about-title">За нас</h2>
+        <h2 id="about-title">About Us</h2>
         <p>
-            Жар Видин ЕООД е утвърдена компания и лидер в региона, специализирана в предлагането на висококачествени
-            продукти и услуги в областта на информационните технологии. <br> <br>
-            С екип от опитни професионалисти и дългогодишно присъствие на пазара, ние се стремим да отговорим на нуждите
-            на всеки клиент с индивидуален подход и внимание към детайла. <br> <br>
+            Jar Vidin LLC is an established company and a leader in the region, specializing in providing high-quality products and services in the field of information technology. <br> <br>
+            With a team of experienced professionals and years of presence in the market, we strive to meet the needs of every customer with a personalized approach and attention to detail. <br> <br>
 
-            <b>Нашите основни дейности включват: </b> <br> <br>
+            <b>Our main activities include:</b> <br> <br>
         </p>
 
         <ul class="custom-list">
-            <li>Магазин и сервиз за компютри и принтери</li>
-            <li>Доставка на консумативи за принтери</li>
-            <li>Разработка на софтуер, съобразен с нуждите на клиента</li>
+            <li>Computer and printer sales and service</li>
+            <li>Printer consumables supply</li>
+            <li>Custom software development</li>
         </ul>
 
         <br>
 
         <p>
-            Мисията ни е да предоставяме решения с висока добавена стойност, базирани на качество, коректност и
-            иновации.
+            Our mission is to provide high-value solutions based on quality, integrity, and innovation.
         </p>
         </p>
     </section>
 
     <!-- Team Section -->
     <section id="team" class="team" aria-labelledby="team-title">
-        <h2 id="team-title">Екип</h2>
+        <h2 id="team-title">Team</h2>
         <div class="team-cards">
             <div class="team-card">
                 <img src="/view/Images/sstefanov.png" style="width: 90px; height: auto; border-radius: 12px;">
                 <br> <br>
-                <h3>Славейко Стефанов</h3>
+                <h3>Slaveyko Stefanov</h3>
                 <br>
-                <p>Собственик, Управител</p>
+                <p>Owner, Manager</p>
             </div>
             <div class="team-card">
                 <img src="/view/Images/vpetrov.png" style="width: 90px; height: auto; border-radius: 12px;">
                 <br> <br>
-                <h3>Виктор Петров</h3>
+                <h3>Victor Petrov</h3>
                 <br>
-                <p>Компютърен оператор, програмист</p>
+                <p>Computer Operator, Programmer</p>
                 <a href="https://victorpetrov.vercel.app" target="_blank" rel="noopener noreferrer" class="linkBtn"
-                    aria-label="Visit Victor's website">Сайтът на Виктор</a>
+                    aria-label="Visit Victor's website">Victor's Website</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Свържете се с нас!</h2>
-        <p>Имате въпроси или искате да обсъдим потенциален проект?<br> Свържете се с нас и ни позволете да превърнем
-            вашите идеи в реалност!</p>
-        <a href="mailto:vidin@jarcomputers.com" class="linkBtn email" aria-label="Send us an email">Изпратете ни
-            E-mail</a>
+        <h2 id="contact-title">Get in Touch!</h2>
+        <p>If you have any questions or would like to discuss a potential project, <br> get in touch with us and let us turn your ideas into reality!</p>
+        <a href="mailto:vidin@jarcomputers.com" class="linkBtn email" aria-label="Send us an email">Send us an Email</a>
         <a href="https://jarcomputers.com" target="_blank" rel="noopener noreferrer" class="linkBtn email"
-            aria-label="Visit Jar Computers's website">Сайтът на Jar Computers</a>
+            aria-label="Visit Jar Computers's website">Jar Computers Website</a>
     </section>
-
 
     <footer class="footer">
         <p>&copy; 2024, Jar Vidin PLTD. All rights reserved.</p>
