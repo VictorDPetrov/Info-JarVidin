@@ -141,7 +141,7 @@
         function switchLanguage(selectElement) {
             const selectedLanguage = selectElement.value; // Get the selected language
             if (selectedLanguage === 'bg') {
-                window.location.href = '/view/home.html';  // Default to the root (Bulgarian)
+                window.location.href = '/home.html';  // Default to the root (Bulgarian)
             } else {
                 window.location.href = `/view/${selectedLanguage}/home.html`;  // Redirect to the corresponding language folder
             }
