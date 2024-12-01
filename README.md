@@ -42,5 +42,5 @@ This project is licensed under the GNU General Public License 3.0. See the [LICE
 For further inquiries or support, feel free to reach out:  
 
 - **Email:** vidin@jarcomputers.com  
-- **Phone:** +359 879 432 421 / +359 877 700 0469  
+- **Phone:** +359 879 432 421 / +359 877 700 469  
 - **Address:** 3700 Vidin Center, ul. "Tsar Alexander II" 3, floor 1, office 9 - Vidin, Bulgaria   
