@@ -405,7 +405,7 @@ html {
 .custom-list {  
     list-style: none;  
     padding: 0;  
-    margin: 0 auto; /* Центрира списъка */  
+    margin: 0 auto;  
     display: flex;  
     flex-direction: column;  
     align-items: center;  
@@ -415,18 +415,36 @@ html {
     background: #f0f0f0;  
     border-left: 4px solid #007bff;  
     margin-bottom: 10px;  
-    width: 30%; /* Регулира ширината на елементите */  
+    width: 90%;
+    max-width: 400px;  
     padding: 15px;  
     font-size: 18px;  
     font-family: 'Arial', sans-serif;  
     color: #333;  
     text-align: center;  
     transition: background 0.3s ease;  
-}  
+}
 
 .custom-list li:hover {  
     background: #e0e0e0;  
-}  
+}
+
+@media (min-width: 768px) {  
+    .custom-list li {  
+    }
+}
+
+@media (min-width: 1200px) {  
+    .custom-list {  
+        flex-direction: column; 
+    }
+
+    .custom-list li {  
+        width: 30%;  
+        margin-bottom: 20px;   
+    }
+}
+
 
 
 .team {
@@ -718,7 +736,6 @@ html {
         width: -40%;
         margin-top: 10px;
         margin-left: -40px;
-        /* Space between header and navbar */
         border-top: 1px solid #0080b8;
         padding-top: 12px;
     }
@@ -732,15 +749,15 @@ html {
     }
 
     .home-content h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .home-content h3 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .home-content p {
-        font-size: 15px;
+        font-size: 13px;
         line-height: 1.5;
     }
 
