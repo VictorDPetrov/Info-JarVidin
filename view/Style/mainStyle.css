@@ -429,11 +429,6 @@ html {
     background: #e0e0e0;  
 }
 
-@media (min-width: 768px) {  
-    .custom-list li {  
-    }
-}
-
 @media (min-width: 1200px) {  
     .custom-list {  
         flex-direction: column; 
@@ -444,8 +439,6 @@ html {
         margin-bottom: 20px;   
     }
 }
-
-
 
 .team {
     background-color: #f7f7f7;
@@ -670,7 +663,7 @@ html {
     .home-content .btn-box {
         flex-direction: row;
         /* Keep buttons in a row */
-        justify-content: space-between;
+        justify-content: space-evenly;
         /* Space between buttons */
         padding: 0;
         /* Remove padding if it was set */
@@ -740,6 +733,12 @@ html {
         padding-top: 12px;
     }
 
+    .linkBtn {
+        padding: 12px;
+        width: 90%;
+        font-size: 14px;
+    }
+
     .home {
         padding: 20px 2%;
     }
@@ -790,7 +789,29 @@ html {
     .email {
         width: 35%;
     }
+
+    .linkBtn {
+        width: 80%;
+    }
+
+    .linkBtn.vicSite {
+        font-size: 12px;
+    }
 }
+
+@media (max-width: 410px) {
+    .team-card h3 {
+        display: inline-block;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .team-card h3::after {
+        content: "";
+        display: block; /* Forces the content after the element to go to a new line */
+    }
+}
+
 
 @media (max-width: 365px) {
     .header {
