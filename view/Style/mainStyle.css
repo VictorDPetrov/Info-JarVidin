@@ -149,7 +149,7 @@ html {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    margin-top: -70px;
+    margin-top: -100px;
 }
 
 .home-content {
@@ -402,41 +402,41 @@ html {
     text-align: justify;
 }
 
-.custom-list {  
-    list-style: none;  
-    padding: 0;  
-    margin: 0 auto;  
-    display: flex;  
-    flex-direction: column;  
-    align-items: center;  
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.custom-list li {  
-    background: #f0f0f0;  
-    border-left: 4px solid #007bff;  
-    margin-bottom: 10px;  
+.custom-list li {
+    background: #f0f0f0;
+    border-left: 4px solid #007bff;
+    margin-bottom: 10px;
     width: 90%;
-    max-width: 400px;  
-    padding: 15px;  
-    font-size: 18px;  
-    font-family: 'Arial', sans-serif;  
-    color: #333;  
-    text-align: center;  
-    transition: background 0.3s ease;  
+    max-width: 400px;
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    transition: background 0.3s ease;
 }
 
-.custom-list li:hover {  
-    background: #e0e0e0;  
+.custom-list li:hover {
+    background: #e0e0e0;
 }
 
-@media (min-width: 1200px) {  
-    .custom-list {  
-        flex-direction: column; 
+@media (min-width: 1200px) {
+    .custom-list {
+        flex-direction: column;
     }
 
-    .custom-list li {  
-        width: 30%;  
-        margin-bottom: 20px;   
+    .custom-list li {
+        width: 30%;
+        margin-bottom: 20px;
     }
 }
 
@@ -658,6 +658,7 @@ html {
 
     .home {
         padding: 0 5%;
+        margin-top: -80px;
     }
 
     .home-content .btn-box {
@@ -684,6 +685,10 @@ html {
 
 
 @media (max-width: 768px) {
+    .home {
+        margin-top: -110px;
+    }
+
     .home-content h1 {
         font-size: 36px;
     }
@@ -741,10 +746,7 @@ html {
 
     .home {
         padding: 20px 2%;
-    }
-
-    .home {
-        padding: 20px 2%;
+        margin-top: -120px;
     }
 
     .home-content h1 {
@@ -808,7 +810,8 @@ html {
 
     .team-card h3::after {
         content: "";
-        display: block; /* Forces the content after the element to go to a new line */
+        display: block;
+        /* Forces the content after the element to go to a new line */
     }
 }
 
