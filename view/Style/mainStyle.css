@@ -663,22 +663,17 @@ html {
 
     .home-content .btn-box {
         flex-direction: row;
-        /* Keep buttons in a row */
-        justify-content: space-evenly;
-        /* Space between buttons */
         padding: 0;
-        /* Remove padding if it was set */
+        margin-left: 0;
     }
 
     .service-cards {
         flex-direction: column;
-        /* Stack service cards */
         align-items: center;
     }
 
     .team-gallery {
         flex-direction: column;
-        /* Stack portfolio items */
         align-items: center;
     }
 }
@@ -729,14 +724,15 @@ html {
     }
 
     .navbar {
-        justify-content: center;
-        /* Center navbar items */
-        width: -40%;
+        display: flex;
+        justify-content: space-between; /* Distributes items evenly */
+        align-items: center;
+        width: 100%;
         margin-top: 10px;
-        margin-left: -40px;
         border-top: 1px solid #0080b8;
         padding-top: 12px;
     }
+    
 
     .linkBtn {
         padding: 12px;
