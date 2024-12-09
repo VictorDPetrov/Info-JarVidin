@@ -152,6 +152,35 @@ html {
     margin-top: -100px;
 }
 
+.video-container {
+    position: relative;  /* Родителят трябва да има 'relative' позициониране */
+    width: 100%;  /* Уверете се, че контейнерът има ширина */
+    height: 65vh;  /* Или каквато височина желаете */
+    padding-left: 250px;
+    transition: .5s;  /* Преход за контейнера, ако е необходимо */
+    display: block;
+}
+
+.video-container::before {
+    content: '';  /* Псевдоелементът ще бъде видим */
+    position: absolute;  /* За да се позиционира спрямо родителя */
+    top: 0;
+    right: 0;  /* Позициониране в дясната част на родителя */
+    width: 0%;  /* Започва с 0% ширина */
+    height: 100%;  /* Височината на псевдоелемента ще бъде 100% от родителя */
+    background: #FFF;  /* Фонът на псевдоелемента */
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.2s;
+    z-index: 4;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 80vh;
+    border: none;
+    border-radius: 10px;
+}
+
 .home-content {
     max-width: 600px;
 }
@@ -161,6 +190,12 @@ html {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
+}
+
+@media(max-width: 1200px) {
+    .video-container {
+        display: none;
+    }
 }
 
 .home-content h1::before {
@@ -636,6 +671,10 @@ html {
     width: 100%;
 }
 
+.vicSite {
+    padding: 25px;
+}
+
 .notAvail {
     width: 80%;
     cursor: not-allowed;
@@ -763,6 +802,19 @@ html {
     .email {
         width: 25%;
     }
+
+    .video-container {
+        height: 50vh;  /* Намаляваме височината на видеото за по-малки екрани */
+        padding-left: 0;  /* Премахваме излишното отстояние */
+    }
+
+    .video-container::before {
+        width: 10%;  /* Псевдоелементът да започва с по-малка ширина */
+    }
+
+    .video-container iframe {
+        height: 60vh;  /* Намаляваме височината на видеото за мобилни устройства */
+    }
 }
 
 @media (max-width: 610px) {
@@ -854,6 +906,18 @@ html {
 
     .linkBtn.vicSite {
         font-size: 12px;
+    }
+
+    .video-container {
+        height: 45vh;  /* Намаляваме още повече височината на видеото за мобилни телефони */
+    }
+
+    .video-container iframe {
+        height: 50vh;  /* Намаляваме височината на видеото за малки екрани */
+    }
+
+    .video-container::before {
+        width: 20%;  /* Псевдоелементът да започва с по-малка ширина */
     }
 }
 
