@@ -350,8 +350,69 @@ html {
     }
 }
 
+.services {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.services-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.services-call-to-action {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .feature {
+        width: 100%;
+    }
+}
+
+
 /* General Section Styling */
-#services,
 #team,
 #contact,
 #about {
@@ -361,7 +422,6 @@ html {
 
 /* Section headings */
 .about h2,
-.services h2,
 .team h2,
 .contact h2 {
     font-size: 36px;
@@ -371,7 +431,6 @@ html {
 
 /* Section text */
 .about p,
-.services p,
 .team p,
 .contact p {
     color: #cfcfcf;
@@ -387,7 +446,7 @@ html {
     text-align: center;
 }
 
-.about h2 {
+.about h2, .services h2 {
     font-size: 2.5em;
     color: #166AB2;
     margin-bottom: 20px;
@@ -725,8 +784,9 @@ html {
 
     .navbar {
         display: flex;
-        justify-content: space-between; /* Distributes items evenly */
-        align-items: center;
+        flex-wrap: wrap; /* Allows items to break onto the next line */
+        justify-content: flex-start; /* Aligns items to the left */
+        gap: 10px; /* Adds space between items */
         width: 100%;
         margin-top: 10px;
         border-top: 1px solid #0080b8;
