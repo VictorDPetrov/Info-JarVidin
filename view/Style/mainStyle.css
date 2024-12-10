@@ -575,6 +575,10 @@ html {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
+.team-card .vicSite {
+    margin-top: 40px;
+}
+
 .team-icon {
     font-size: 4em;
     color: #166AB2;
