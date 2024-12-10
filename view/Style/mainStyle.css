@@ -323,9 +323,10 @@ html {
 .home-sci {
     position: absolute;
     bottom: 40px;
-    width: 170px;
+    width: 200px;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .home-sci::before {
