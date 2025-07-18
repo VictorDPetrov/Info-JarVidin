@@ -153,22 +153,32 @@ html {
 }
 
 .video-container {
-    position: relative;  /* Родителят трябва да има 'relative' позициониране */
-    width: 100%;  /* Уверете се, че контейнерът има ширина */
-    height: 65vh;  /* Или каквато височина желаете */
+    position: relative;
+    /* Родителят трябва да има 'relative' позициониране */
+    width: 100%;
+    /* Уверете се, че контейнерът има ширина */
+    height: 65vh;
+    /* Или каквато височина желаете */
     padding-left: 250px;
-    transition: .5s;  /* Преход за контейнера, ако е необходимо */
+    transition: .5s;
+    /* Преход за контейнера, ако е необходимо */
     display: block;
 }
 
 .video-container::before {
-    content: '';  /* Псевдоелементът ще бъде видим */
-    position: absolute;  /* За да се позиционира спрямо родителя */
+    content: '';
+    /* Псевдоелементът ще бъде видим */
+    position: absolute;
+    /* За да се позиционира спрямо родителя */
     top: 0;
-    right: 0;  /* Позициониране в дясната част на родителя */
-    width: 0%;  /* Започва с 0% ширина */
-    height: 100%;  /* Височината на псевдоелемента ще бъде 100% от родителя */
-    background: #FFF;  /* Фонът на псевдоелемента */
+    right: 0;
+    /* Позициониране в дясната част на родителя */
+    width: 0%;
+    /* Започва с 0% ширина */
+    height: 100%;
+    /* Височината на псевдоелемента ще бъде 100% от родителя */
+    background: #FFF;
+    /* Фонът на псевдоелемента */
     animation: showRight 1s ease forwards;
     animation-delay: 2.2s;
     z-index: 4;
@@ -457,7 +467,8 @@ html {
 /* General Section Styling */
 #team,
 #contact,
-#about {
+#about,
+#projects {
     padding: 60px 10%;
     text-align: center;
 }
@@ -465,7 +476,8 @@ html {
 /* Section headings */
 .about h2,
 .team h2,
-.contact h2 {
+.contact h2,
+.projects h2 {
     font-size: 36px;
     color: #ededed;
     margin-bottom: 20px;
@@ -474,7 +486,8 @@ html {
 /* Section text */
 .about p,
 .team p,
-.contact p {
+.contact p,
+.projects p {
     color: #cfcfcf;
     max-width: 700px;
     margin: 0 auto;
@@ -488,7 +501,8 @@ html {
     text-align: center;
 }
 
-.about h2, .services h2 {
+.about h2,
+.services h2 {
     font-size: 2.5em;
     color: #166AB2;
     margin-bottom: 20px;
@@ -745,6 +759,92 @@ html {
     /* Adjust font size */
 }
 
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.portfolio-item {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    width: clamp(280px, 45%, 400px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
+    z-index: 2;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.portfolio-text {
+    padding: 10px;
+    color: #333;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.6;
+}
+
+.btn {
+    font-size: 12px;
+    display: inline-block;
+    text-align: center;
+    background: #0062b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    margin: 20px auto 0 auto;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.portfolio-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-text {
+    font-size: 1.5rem;
+    color: #0062b3;
+    margin-bottom: 10px;
+}
+
+.portfolio-image {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .home-content h1 {
@@ -815,16 +915,20 @@ html {
     }
 
     .video-container {
-        height: 50vh;  /* Намаляваме височината на видеото за по-малки екрани */
-        padding-left: 0;  /* Премахваме излишното отстояние */
+        height: 50vh;
+        /* Намаляваме височината на видеото за по-малки екрани */
+        padding-left: 0;
+        /* Премахваме излишното отстояние */
     }
 
     .video-container::before {
-        width: 10%;  /* Псевдоелементът да започва с по-малка ширина */
+        width: 10%;
+        /* Псевдоелементът да започва с по-малка ширина */
     }
 
     .video-container iframe {
-        height: 60vh;  /* Намаляваме височината на видеото за мобилни устройства */
+        height: 60vh;
+        /* Намаляваме височината на видеото за мобилни устройства */
     }
 }
 
@@ -847,15 +951,18 @@ html {
 
     .navbar {
         display: flex;
-        flex-wrap: wrap; /* Allows items to break onto the next line */
-        justify-content: flex-start; /* Aligns items to the left */
-        gap: 10px; /* Adds space between items */
+        flex-wrap: wrap;
+        /* Allows items to break onto the next line */
+        justify-content: flex-start;
+        /* Aligns items to the left */
+        gap: 10px;
+        /* Adds space between items */
         width: 100%;
         margin-top: 10px;
         border-top: 1px solid #0080b8;
         padding-top: 12px;
     }
-    
+
 
     .linkBtn {
         padding: 12px;
@@ -920,15 +1027,18 @@ html {
     }
 
     .video-container {
-        height: 45vh;  /* Намаляваме още повече височината на видеото за мобилни телефони */
+        height: 45vh;
+        /* Намаляваме още повече височината на видеото за мобилни телефони */
     }
 
     .video-container iframe {
-        height: 50vh;  /* Намаляваме височината на видеото за малки екрани */
+        height: 50vh;
+        /* Намаляваме височината на видеото за малки екрани */
     }
 
     .video-container::before {
-        width: 20%;  /* Псевдоелементът да започва с по-малка ширина */
+        width: 20%;
+        /* Псевдоелементът да започва с по-малка ширина */
     }
 }
 
